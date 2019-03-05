@@ -5,12 +5,11 @@ package io.github.guiritter;
  */
 public final class TestGitHubMaven {
 
-    /**
-     * Hello world string!
-     */
-    public static final String HELLO_WORLD = "Hello World!";
-
     public static void main(String[] args) {
-        System.out.println(HELLO_WORLD);
+        System.out.println(new TestGitHubMaven().greet("world"));
+    }
+
+    public String greet(String name) {
+        return "Hello " + name;
     }
 }
